@@ -7,7 +7,7 @@ from typing import List
 # Thirdparty:
 from setuptools import find_packages, setup
 
-__version__ = "1.1.0-dev1"
+__version__ = "1.1.0.0-dev1"
 PARENT = pathlib.Path(__file__).parent
 
 
@@ -26,7 +26,7 @@ options = dict(
     name="wdb.server.aiohttp",
     version=__version__,
     description="An improbable web debugger through WebSockets (server)",
-    long_description=open("README.md").read(),
+    long_description=open("README.md", encoding='UTF-8').read(),
     long_description_content_type="text/markdown",
     author="Shepilov Vladislav",
     author_email="shepilov.v@protonmail.com",
