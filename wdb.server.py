@@ -5,7 +5,6 @@ import argparse
 from logging import DEBUG, INFO, WARNING, getLogger
 
 # Thirdparty:
-import uvloop
 from aiomisc import entrypoint
 
 # Firstparty:
@@ -75,8 +74,6 @@ def main() -> None:
             log.setLevel(DEBUG)
     else:
         log.setLevel(WARNING)
-
-    uvloop.install()
 
     services = (
         WDBService(
